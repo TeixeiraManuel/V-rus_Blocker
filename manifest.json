@@ -1,0 +1,30 @@
+{
+    "name": "Virus Blocker",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description":"extenão para verificar sites maliciosos",
+    "permissions": [
+      "webNavigation",
+      "tabs",
+      "activeTab",
+      "storage",
+      "notifications",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },  
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/script.js"]
+      }
+    ]
+  }
+  

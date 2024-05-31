@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+  --color-background:#27272a;
+  --color-secondary:#252525;
+  --color-primary:#f2eaeaf0;
+  --color-button:#EA5B3B;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.signup{
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-color: var(--color-background);
+}
+.signup form{
+  width: 100%;
+  padding: 0 4rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup form input{
+  outline: none;
+  background-color: var(--color-primary);
+  padding: 1rem;
+}
+
+.signup form button{
+  margin-top: 2rem;
+  padding: 1rem 0;
+  cursor:pointer;
+  background-color: var(--color-button);
+  border: none;
+  color: var(--color-primary);
+}
+h1,p{
+  color: var(--color-primary);
+  padding: 0 2rem;
+}
+ p{
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+/*MODAL*/
+.modal-alert{
+  display: none;
+}
+.modal-alert.on{
+  display: block;
+  width: 50rem;
+  height: 46rem;
+  border-radius: .9rem;
+  background-color: var(--color-background);
+}
+.container-img{
+  background-color: var(--color-secondary);
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  margin: 2rem auto;
+}
+.containerInformation h1, p{
+  color: var(--color-primary);
+  padding: 0 2rem;
+}
+.containerInformation p{
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-top: 2rem;
+}
+.signup input{
+  width: 100%;
+}
+.form{
+  width: 100%;
+}
+.signup .form.on{
+  width: 100%;
+  display: none;
+}
