@@ -17,4 +17,3 @@ A extensão Vírus Blocker é uma ferramenta desenvolvida para proteger os usuá
 
 3. Baixar o Node.js e, por fim, rodar a API na sua máquina local.
 
-Organize e também dê um exemplo melhor de como colocar a imagem.
